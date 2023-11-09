@@ -1,5 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using multiDelegate;
+using MyEvent;
 
-ParameterCompatibility parameter = new ParameterCompatibility();
-parameter.ParameterCompatibilityMethod();
+Stock.StockMethod();

@@ -102,7 +102,7 @@ namespace multiDelegate
         public void ParameterCompatibilityMethod()
         {
             StringAction sa = new StringAction(ActOnObject);
-            sa("Hello"); 
+            sa("Parameter Compatibility"); 
         }
         void ActOnObject(object o) => Console.WriteLine(o);
         delegate void StringAction(String s);
@@ -118,7 +118,7 @@ namespace multiDelegate
             object o = or();
             Console.WriteLine(o);
         }
-        string GetString() => "Hello";
+        string GetString() => "Return Compatibility";
         delegate object ObjectRetriever();
     }
     //------------Dividing line----------------
